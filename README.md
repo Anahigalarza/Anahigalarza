@@ -12,7 +12,8 @@ Habla con Claude en esta sesión y sube lo que tengas. El residente deriva a cad
 | Duda técnica | "¿Este armado de columna está bien?" + foto | residente-obra |
 | Proforma nueva | "Haz la proforma para ampliación de 60 m²" | proformas |
 | Pedir precios | "Arma la solicitud de cotización de hierro y cemento" | proformas |
-| Redes | "Haz el post de esta foto del fundido de losa" | redes-sociales |
+| Redes | "Haz el antes y después de esta obra" | redes-sociales |
+| Facturar / SRI | "Prepara la factura de la proforma 1047" | contabilidad-sri |
 
 ## Estructura
 - `obras/` — una carpeta por obra (copiar `_PLANTILLA_OBRA`)
