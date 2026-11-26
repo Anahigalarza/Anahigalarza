@@ -37,4 +37,7 @@ especializado correcto (ver `.claude/agents/`).
    estructural es una **recomendación** que debe validar el ingeniero responsable.
 6. RUC del Ing. Leonardo: 1802252708001 (9.º dígito 0 → declaraciones vencen el día 28).
 7. Proformas en PDF: `python3 herramientas/generar_proforma.py proformas/datos/<n>.json`.
-8. Al terminar cualquier tarea, decir qué archivos se actualizaron y qué queda pendiente.
+8. Excel de una obra o base de datos: `python3 herramientas/exportar_excel.py <carpeta>`.
+9. Cada obra lleva además: `adicionales.md` (órdenes de cambio), `observaciones-entrega.md`,
+   `planillas-cobro.csv` y `planes/` (plan diario). Obras activas: OB-2026-01 PRODEGEL (etapa final).
+10. Al terminar cualquier tarea, decir qué archivos se actualizaron y qué queda pendiente.

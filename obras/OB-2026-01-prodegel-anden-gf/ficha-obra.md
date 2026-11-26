@@ -1,0 +1,11 @@
+# Ficha de obra
+- Código: OB-2026-01
+- Nombre: Reparación de andén GF en piscinas de encalado
+- Cliente: FÁBRICA PRODEGEL S.A. (fábrica de gelatina)
+- Ubicación: planta PRODEGEL — (completar)
+- Tipo: reparación industrial de piso de hormigón
+- Área: 78,72 m² · Proforma 1047 · USD 3.945,43 + IVA
+- Plazo ofertado: 5 días por andén + 1 día de fraguado
+- Fecha inicio / entrega: (completar)
+- Responsable técnico: Ing. Leonardo E. Galarza C.
+- Estado: **en ejecución — etapa final**

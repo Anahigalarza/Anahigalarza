@@ -75,7 +75,7 @@ def main(ruta_json):
         f"<font size=15 color='#2E7D32'><b>{emp['nombre']}</b></font><br/>"
         f"<font size=9 color='#2E7D32'>{emp['subtitulo']}</font><br/>"
         f"<font size=7.5 color='#555555'>RUC: {emp['ruc']} · {emp['licencia']}<br/>"
-        f"{emp['direccion']} · Telf. {emp['telefono']} · Cel. {emp['celular']}<br/>{emp['correo']}</font>", p_norm)
+        f"{emp['direccion']} · Telf. {emp['telefono']} · Cel. {emp['celular']}<br/>{emp['correo']}</font>", st(leading=12))
     caja_num = Table([["PROFORMA"], [f"N.º {d['numero']}"], [d["fecha"]]], colWidths=[35*mm])
     caja_num.setStyle(TableStyle([
         ("BACKGROUND", (0,0), (-1,0), VERDE), ("TEXTCOLOR", (0,0), (-1,0), colors.white),
@@ -83,7 +83,7 @@ def main(ruta_json):
         ("ALIGN", (0,0), (-1,-1), "CENTER"), ("BOX", (0,0), (-1,-1), 1, VERDE),
         ("FONTSIZE", (0,2), (-1,2), 8)]))
     enc = Table([[logo, datos, caja_num]], colWidths=[46*mm, W-46*mm-37*mm, 37*mm])
-    enc.setStyle(TableStyle([("VALIGN", (0,0), (-1,-1), "MIDDLE"), ("BOTTOMPADDING", (0,0), (-1,-1), 8),
+    enc.setStyle(TableStyle([("VALIGN", (0,0), (-1,-1), "MIDDLE"), ("BOTTOMPADDING", (0,0), (-1,-1), 10), ("TOPPADDING", (0,0), (-1,-1), 0),
                              ("LINEBELOW", (0,0), (-1,0), 2, VERDE)]))
     el += [enc, Spacer(1, 5*mm), Paragraph("PRESUPUESTO REFERENCIAL DE OBRA", p_title),
            Spacer(1, 1*mm), Paragraph(d["proyecto"].upper(), p_proj), Spacer(1, 4*mm)]
@@ -124,20 +124,26 @@ def main(ruta_json):
             r = len(data); data.append(["", f"Subtotal {g['titulo'].lower()}", "", "", "", money(sg)])
             estilos += [("FONTNAME", (0,r), (-1,r), "Helvetica-Bold"), ("SPAN", (1,r), (4,r)), ("ALIGN", (1,r), (1,r), "RIGHT")]
         subtotal += sg
+    pct = d.get("imprevistos_pct", 0)
+    if pct:
+        n += 1; imp = round(subtotal * pct / 100, 2)
+        data.append([str(n), Paragraph(f"Imprevistos ({money(pct)} % del costo directo)", st(fontSize=8.5, leading=10)),
+                     "global", money(1), money(imp), money(imp)])
+        subtotal += imp
     estilos += [("ALIGN", (2,1), (2,-1), "CENTER"), ("ALIGN", (3,1), (-1,-1), "RIGHT"), ("ALIGN", (0,1), (0,-1), "CENTER")]
     t = Table(data, colWidths=cols, repeatRows=1); t.setStyle(TableStyle(estilos))
     el += [t]
 
-    # Totales
-    subtotal = round(subtotal, 2); iva = round(subtotal * IVA, 2); total = round(subtotal + iva, 2)
-    tt = Table([["SUBTOTAL SIN IVA", money(subtotal)], [f"IVA {int(IVA*100)} %", money(iva)],
-                ["TOTAL USD", money(total)]], colWidths=[40*mm, 25*mm], hAlign="RIGHT")
-    tt.setStyle(TableStyle([("ALIGN", (0,0), (-1,-1), "RIGHT"), ("FONTSIZE", (0,0), (-1,-1), 9),
+    # Totales: una sola línea, como la proforma original ("PRECIO TOTAL + IVA")
+    subtotal = round(subtotal, 2)
+    etiqueta = d.get("etiqueta_total", "PRECIO TOTAL + IVA")
+    tt = Table([[etiqueta, "USD " + money(subtotal)]], colWidths=[48*mm, 32*mm], hAlign="RIGHT")
+    tt.setStyle(TableStyle([("ALIGN", (0,0), (-1,-1), "RIGHT"), ("FONTSIZE", (0,0), (-1,-1), 10),
                             ("FONTNAME", (0,0), (-1,-1), "Helvetica-Bold"),
-                            ("BACKGROUND", (0,2), (-1,2), VERDE), ("TEXTCOLOR", (0,2), (-1,2), colors.white),
-                            ("BOX", (0,0), (-1,-1), 0.6, GRIS), ("LINEBELOW", (0,0), (-1,1), 0.3, GRIS)]))
+                            ("BACKGROUND", (0,0), (-1,-1), VERDE), ("TEXTCOLOR", (0,0), (-1,-1), colors.white),
+                            ("TOPPADDING", (0,0), (-1,-1), 5), ("BOTTOMPADDING", (0,0), (-1,-1), 5)]))
     el += [Spacer(1, 1*mm), tt, Spacer(1, 2*mm),
-           Paragraph(f"<b>Son:</b> {en_letras(total)}", p_norm), Spacer(1, 4*mm)]
+           Paragraph(f"<b>Son:</b> {en_letras(subtotal)}, más IVA.", p_norm), Spacer(1, 4*mm)]
 
     # Condiciones
     bloque = []
@@ -158,7 +164,54 @@ def main(ruta_json):
         canv.drawString(15*mm, 8*mm, f"{emp['nombre']} · Proforma {d['numero']} · {d['cliente']['nombre']}")
         canv.drawRightString(A4[0]-15*mm, 8*mm, f"Página {_doc.page}"); canv.restoreState()
     doc.build(el, onFirstPage=pie, onLaterPages=pie)
-    print(f"PDF: {salida}\nSubtotal {money(subtotal)} | IVA {money(iva)} | Total {money(total)}")
+    exportar_excel(d, salida.with_suffix(".xlsx"))
+    print(f"Excel: {salida.with_suffix('.xlsx')}")
+    print(f"PDF: {salida}\n{etiqueta}: {money(subtotal)}")
+
+def exportar_excel(d, ruta):
+    """Misma proforma en Excel, con fórmulas para poder editar cantidades y precios."""
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+    wb = Workbook(); ws = wb.active; ws.title = f"Proforma {d['numero']}"
+    verde = PatternFill("solid", fgColor="2E7D32"); claro = PatternFill("solid", fgColor="E8F5E9")
+    fino = Side(style="thin", color="BDBDBD"); borde = Border(left=fino, right=fino, top=fino, bottom=fino)
+    emp = d["emisor"]
+    ws["A1"] = emp["nombre"] + " — " + emp["subtitulo"]; ws["A1"].font = Font(bold=True, size=13, color="2E7D32")
+    ws["A2"] = f"RUC {emp['ruc']} · {emp['licencia']} · {emp['direccion']} · Cel. {emp['celular']} · {emp['correo']}"
+    ws["A4"] = "PRESUPUESTO REFERENCIAL DE OBRA"; ws["A4"].font = Font(bold=True, size=12)
+    ws["A5"] = d["proyecto"].upper(); ws["A5"].font = Font(bold=True, color="1565C0")
+    ws["A6"] = f"Cliente: {d['cliente']['nombre']}"; ws["E6"] = f"Proforma N.º {d['numero']}"
+    ws["A7"] = f"Plazo: {d.get('plazo', '')}"; ws["E7"] = d["fecha"]
+    fila = 9
+    for i, h in enumerate(["N.º", "DESCRIPCIÓN DEL RUBRO", "UNIDAD", "CANTIDAD", "P. UNITARIO", "P. TOTAL"], 1):
+        c = ws.cell(fila, i, h); c.fill = verde; c.font = Font(bold=True, color="FFFFFF"); c.border = borde
+        c.alignment = Alignment(horizontal="center")
+    fila += 1; n = 0; primeras = fila
+    for g in d["grupos"]:
+        ws.cell(fila, 1, g["titulo"].upper()).font = Font(bold=True, color="1565C0")
+        for col in range(1, 7): ws.cell(fila, col).fill = claro
+        fila += 1
+        for rb in g["rubros"]:
+            n += 1
+            vals = [n, rb["descripcion"], rb["unidad"], rb["cantidad"], rb["pu"], f"=D{fila}*E{fila}"]
+            for col, v in enumerate(vals, 1):
+                c = ws.cell(fila, col, v); c.border = borde
+                if col >= 4: c.number_format = "#,##0.00"
+            ws.cell(fila, 2).alignment = Alignment(wrap_text=True, vertical="center")
+            fila += 1
+    ultima = fila - 1
+    pct = d.get("imprevistos_pct", 0)
+    if pct:
+        n += 1
+        for col, v in enumerate([n, f"Imprevistos ({pct} % del costo directo)", "global", 1,
+                                 f"=SUM(F{primeras}:F{ultima})*{pct}/100", f"=D{fila}*E{fila}"], 1):
+            c = ws.cell(fila, col, v); c.border = borde
+            if col >= 4: c.number_format = "#,##0.00"
+        fila += 1
+    ws.cell(fila + 1, 5, d.get("etiqueta_total", "PRECIO TOTAL + IVA")).font = Font(bold=True)
+    c = ws.cell(fila + 1, 6, f"=SUM(F{primeras}:F{fila - 1})"); c.font = Font(bold=True); c.number_format = "#,##0.00"
+    for col, w in zip("ABCDEF", [6, 60, 9, 11, 13, 14]): ws.column_dimensions[col].width = w
+    wb.save(ruta)
 
 if __name__ == "__main__":
     main(sys.argv[1])

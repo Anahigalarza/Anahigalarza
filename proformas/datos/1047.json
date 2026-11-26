@@ -13,29 +13,81 @@
     "firmante": "Ing. Leonardo E. Galarza C.",
     "logo": "empresa/marca/logo-lg.png"
   },
-  "cliente": {"nombre": "FÁBRICA PRODEGEL S.A.", "ruc": "", "contacto": ""},
+  "cliente": {
+    "nombre": "FÁBRICA PRODEGEL S.A.",
+    "ruc": "",
+    "contacto": ""
+  },
   "proyecto": "Reparación de andén GF en piscinas de encalado",
   "ubicacion": "Planta PRODEGEL",
   "plazo": "5 días por andén + 1 día de fraguado",
   "validez": "15 días calendario",
   "grupos": [
-    {"titulo": "Costo reparación andén GF", "rubros": [
-      {"descripcion": "Retiro de impurezas, hidrolavado y limpieza profunda del hormigón existente", "unidad": "m²", "cantidad": 78.72, "pu": 4.00},
-      {"descripcion": "Pegante Premium para adherencia entre hormigón existente y nueva capa", "unidad": "saco", "cantidad": 12, "pu": 20.00},
-      {"descripcion": "Plataforma de hormigón premezclado e = 7 cm, con acelerante y encofrado lateral de madera", "unidad": "m²", "cantidad": 78.72, "pu": 19.00},
-      {"descripcion": "Endurecedor de cuarzo y antisol (curador)", "unidad": "m²", "cantidad": 78.72, "pu": 3.50},
-      {"descripcion": "Alisado de piso con helicóptero, corte y sellado de juntas", "unidad": "m²", "cantidad": 78.72, "pu": 2.85},
-      {"descripcion": "Malla electrosoldada, incluye traslapes longitudinales y transversales, perforaciones y anclajes", "unidad": "m²", "cantidad": 90.00, "pu": 6.50, "especificacion": "Cantidad incluye 14 % por traslapes."},
-      {"descripcion": "Reparación de rampas y bordes laterales e inferiores con epóxico y hormigón con grout", "unidad": "global", "cantidad": 1, "pu": 350.00},
-      {"descripcion": "Marco de acero inoxidable y rejilla plástica amarilla reforzada con fibra", "unidad": "u", "cantidad": 2, "pu": 230.00}
-    ]}
+    {
+      "titulo": "Costo reparación andén GF",
+      "rubros": [
+        {
+          "descripcion": "Retiro de impurezas, hidrolavado y limpieza profunda del hormigón existente",
+          "unidad": "m²",
+          "cantidad": 78.72,
+          "pu": 4.0
+        },
+        {
+          "descripcion": "Pegante Premium para adherencia entre hormigón existente y nueva capa",
+          "unidad": "saco",
+          "cantidad": 12,
+          "pu": 20.0
+        },
+        {
+          "descripcion": "Plataforma de hormigón premezclado e = 7 cm, con acelerante y encofrado lateral de madera",
+          "unidad": "m²",
+          "cantidad": 78.72,
+          "pu": 19.0
+        },
+        {
+          "descripcion": "Endurecedor de cuarzo y antisol (curador)",
+          "unidad": "m²",
+          "cantidad": 78.72,
+          "pu": 3.5
+        },
+        {
+          "descripcion": "Alisado de piso con helicóptero, corte y sellado de juntas",
+          "unidad": "m²",
+          "cantidad": 78.72,
+          "pu": 2.85
+        },
+        {
+          "descripcion": "Malla electrosoldada, incluye traslapes longitudinales y transversales, perforaciones y anclajes",
+          "unidad": "m²",
+          "cantidad": 90.0,
+          "pu": 6.5,
+          "especificacion": "Cantidad incluye 14 % por traslapes."
+        },
+        {
+          "descripcion": "Reparación de rampas y bordes laterales e inferiores con epóxico y hormigón con grout",
+          "unidad": "global",
+          "cantidad": 1,
+          "pu": 350.0
+        },
+        {
+          "descripcion": "Marco de acero inoxidable y rejilla plástica amarilla reforzada con fibra",
+          "unidad": "u",
+          "cantidad": 2,
+          "pu": 230.0
+        }
+      ]
+    }
   ],
-  "condiciones": [
-    "Forma de pago: 50 % de anticipo a la firma, 50 % contra entrega y recepción de la obra.",
-    "Garantía de 1 año sobre mano de obra y materiales provistos.",
-    "Precios en dólares de los Estados Unidos de América."
+  "incluye": [
+    "Materiales, mano de obra, herramienta menor, equipo (hidrolavadora, helicóptero) y transporte."
   ],
-  "incluye": ["Materiales, mano de obra, herramienta menor, equipo (hidrolavadora, helicóptero) y transporte."],
-  "no_incluye": ["Trabajos no detallados en esta proforma.", "Paralizaciones por causas ajenas al contratista."],
-  "notas": ["Medidas sujetas a verificación en sitio; se liquidará por cantidades realmente ejecutadas."]
+  "no_incluye": [
+    "Trabajos no detallados en esta proforma.",
+    "Paralizaciones por causas ajenas al contratista."
+  ],
+  "notas": [
+    "Medidas sujetas a verificación en sitio; se liquidará por cantidades realmente ejecutadas."
+  ],
+  "imprevistos_pct": 0,
+  "etiqueta_total": "PRECIO TOTAL + IVA"
 }
