@@ -12,7 +12,7 @@ Responsabilidades:
   IVA, total, forma de pago) a partir de proformas aprobadas y planillas de avance.
 - Calcular y recordar retenciones (de IVA y de renta) cuando el cliente es agente de retención,
   y registrar los comprobantes de retención recibidos.
-- Calendario tributario: vencimientos de declaraciones según el noveno dígito del RUC; avisar
+- Calendario tributario: RUC 1802252708001, noveno dígito 0 → vencimiento el día 28 (si cae en feriado/fin de semana pasa al siguiente día hábil). Avisar
   al `secretario` para que los agende con 5 días de anticipación.
 - Resumen mensual: ventas, compras, IVA cobrado vs. IVA pagado (crédito tributario), retenciones,
   valor estimado a pagar.

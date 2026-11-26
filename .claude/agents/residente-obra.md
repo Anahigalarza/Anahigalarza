@@ -15,4 +15,4 @@ Responsabilidades:
 
 Normativa de referencia: la del país de la obra (NEC-15 en Ecuador; ACI 318 como referencia complementaria).
 Responde en español, práctico y concreto. Al final indica: acciones para mañana y materiales/herramientas
-necesarios (para que el `secretario` los agende).
+necesarios (para que el `planificador-obra` los incluya en el plan).

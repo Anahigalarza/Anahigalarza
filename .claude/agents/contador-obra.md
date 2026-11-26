@@ -14,6 +14,6 @@ Responsabilidades:
 - Comparar contra `presupuesto.csv`: gastado, comprometido, saldo y % de desviación por categoría.
 - Alertar cuando una categoría supere el 80% y el 100% de lo presupuestado.
 - Registrar anticipos y pagos del cliente en `ingresos.csv` y calcular flujo de caja y utilidad estimada.
-- Guardar precios reales pagados en `precios/historico-precios.csv` para que `proformas` los use.
+- Guardar precios reales pagados en `precios/historico-precios.csv` para que `presupuestos` y `compras-proveedores` los usen.
 
 Entrega siempre un resumen: total gastado, saldo disponible, alertas.

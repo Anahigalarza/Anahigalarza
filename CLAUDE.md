@@ -18,10 +18,12 @@ especializado correcto (ver `.claude/agents/`).
 | Agente | Cuándo usarlo |
 |---|---|
 | `residente-obra` | Dudas técnicas, estructura, sismorresistencia, procesos constructivos, control de calidad, bitácora |
-| `secretario` | Cronogramas, calendario, recordatorios, listas de herramientas y compras para cada día |
+| `planificador-obra` | Plan técnico del día siguiente (6 pm), aviso de las 6 am, cantidades para cada actividad, control de plazo |
+| `secretario` | Agenda del equipo, reuniones, citas con clientes, correos/mensajes, vencimientos |
 | `contador-obra` | Registrar gastos de cada obra (fotos de facturas/recibos), presupuesto vs. real, saldos |
 | `contabilidad-sri` | Facturación electrónica SRI, retenciones, declaraciones IVA/renta, constitución de la empresa |
-| `proformas` | Analizar proformas existentes, armar nuevas proformas, APUs y pedidos de cotización a proveedores |
+| `presupuestos` | Crear proformas para clientes: entrevista, cantidades, precios, PDF profesional |
+| `compras-proveedores` | Cotizaciones a proveedores, comparativos, lista de precios, compras del día |
 | `redes-sociales` | Contenido para Instagram/Facebook/TikTok/LinkedIn, calendario de publicaciones, marca |
 
 ## Reglas generales
@@ -33,4 +35,6 @@ especializado correcto (ver `.claude/agents/`).
    Ing. Leonardo E. Galarza C. Modelo de proforma: `proformas/MODELO.md`.
 5. Normativa: NEC-15 (Ecuador), zona sísmica alta. Toda decisión
    estructural es una **recomendación** que debe validar el ingeniero responsable.
-6. Al terminar cualquier tarea, decir qué archivos se actualizaron y qué queda pendiente.
+6. RUC del Ing. Leonardo: 1802252708001 (9.º dígito 0 → declaraciones vencen el día 28).
+7. Proformas en PDF: `python3 herramientas/generar_proforma.py proformas/datos/<n>.json`.
+8. Al terminar cualquier tarea, decir qué archivos se actualizaron y qué queda pendiente.

@@ -7,11 +7,11 @@ Habla con Claude en esta sesión y sube lo que tengas. El residente deriva a cad
 |---|---|---|
 | Registrar gastos | "Te subo 5 facturas de la obra Casa Pérez" | contador-obra |
 | Saber cuánto queda | "¿Cuánto llevamos gastado en Casa Pérez?" | contador-obra |
-| Plan de mañana | "¿Qué llevamos mañana a la obra?" | secretario |
+| Plan de mañana | "¿Qué llevamos mañana a la obra?" | planificador-obra |
 | Cronograma | "Arma el cronograma de la losa del 2do piso" | secretario |
 | Duda técnica | "¿Este armado de columna está bien?" + foto | residente-obra |
-| Proforma nueva | "Haz la proforma para ampliación de 60 m²" | proformas |
-| Pedir precios | "Arma la solicitud de cotización de hierro y cemento" | proformas |
+| Proforma nueva | "Haz la proforma para ampliación de 60 m²" | presupuestos |
+| Pedir precios | "Arma la solicitud de cotización de hierro y cemento" | compras-proveedores |
 | Redes | "Haz el antes y después de esta obra" | redes-sociales |
 | Facturar / SRI | "Prepara la factura de la proforma 1047" | contabilidad-sri |
 
