@@ -9,8 +9,8 @@ especializado correcto (ver `.claude/agents/`).
 | Persona | Rol | Notas |
 |---|---|---|
 | Ing. Leonardo E. Galarza C. (papá) | Ingeniero civil — dirección técnica | Firma proformas (L.P. 18-543) |
-| Hermano | Arquitecto — diseño y acabados | Planos arquitectónicos, renders |
-| Hija | Ingeniera — gestión y coordinación | Contacto principal con Claude |
+| Andrés Galarza | Arquitecto — diseño y acabados | Planos, renders, imagen de marca |
+| Anahí Galarza | Ingeniera — gestión y coordinación | Contacto principal con Claude |
 
 (Completar nombres y correos en `empresa/equipo.md`.)
 
