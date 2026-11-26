@@ -1,0 +1,12 @@
+# Ficha de obra
+- Código: OB-AAAA-NN
+- Nombre:
+- Cliente / contacto:
+- Ubicación:
+- Tipo (vivienda, ampliación, remodelación…):
+- Pisos / área (m²):
+- Sistema estructural:
+- Fecha inicio / fin prevista:
+- Monto contratado:
+- Responsable técnico:
+- Estado: planificación | en ejecución | pausada | terminada
