@@ -240,6 +240,47 @@ Con 10 m² de reparación, espesor promedio de 5 cm y parrilla Ø10 @ 15 cm:
 - [SikaEmaco® S 488 — Hoja técnica Sika Ecuador, oct-2025, v05.01](https://ecu.sika.com/dms/getdocument.get/7a0ee309-0058-4d8f-b595-a81795682bb0/sikaemaco-s-488.pdf)
 - [SikaRep S — Hoja técnica Sika Tailandia (referencia; no es la de Ecuador)](https://tha.sika.com/content/dam/dms/th01/1/sikarep_s.pdf)
 
+---
+
+## 8. Actualización (27-nov-2026, tarde) — la cuadrilla empieza HOY con Armatec 108
+
+Datos que mandó el residente: los productos ya están en sitio. Leyó la etiqueta del Armatec 108 y **coincide con la hoja técnica de Ecuador (oct-2025)**: hay que mezclar todo el componente A con todo el B, dar mínimo 2 capas, esperar 6 h entre capas, la 3.ª capa es opcional a las 12 h y hay que esperar 24 h antes del mortero. También hay en obra un saco **INTACCO de 25 kg**.
+
+### 8.1 Tiempos corregidos para Ambato (temperatura menor a 20 °C)
+Los tiempos de la hoja técnica son **a 20 °C**. Dentro de la galería, en Ambato, se esperan unos 10–16 °C (más frío en la madrugada). Como regla práctica, por cada ~10 °C menos los tiempos se alargan casi al doble. **Para la obra:**
+
+| Etapa | Hoja técnica (20 °C) | **Usar en obra (10–16 °C)** |
+|---|---|---|
+| Vida de la mezcla de Armatec 108 | ≈ 30 min | ≈ 45 min (igual, preparar solo lo que se usa; no rehidratar) |
+| 1.ª → 2.ª capa | 6 h mín. | **10–12 h** → 1.ª capa en la tarde y 2.ª al día siguiente temprano |
+| 2.ª → 3.ª capa (recomendada en ambiente salino) | 12 h | **≈ 24 h** |
+| Última capa → mortero | 24 h mín. | **36–48 h** |
+| Entre capas de mortero sobre cabeza | 1–3 h | 2–5 h (que no se marque con el dedo) |
+| Curado húmedo del mortero | 3–7 días | **7 días** |
+
+- **Prueba en obra:** la capa está lista para la siguiente cuando está **dura al tacto, ya no se marca con la uña y no mancha el guante**. Si se tiene duda, esperar más; nunca menos de lo que dice la hoja.
+- **No aplicar** con la superficie o el ambiente **por debajo de +5 °C** (hojas de MonoTop/SikaRep) ni sobre acero mojado o con gotas. Si la losa gotea encima de la zona, primero hay que cortar o desviar el goteo.
+- La humedad alta de la galería también hace más lento el secado. Ventilar ayuda.
+- **Calendario por tramo en Ambato:** día 1, picado, limpieza y 1.ª capa (tarde). Día 2, 2.ª capa (mañana). Día 3, 3.ª capa. Día 4–5, lechada y mortero.
+
+### 8.2 Seguridad del Armatec 108 (pictogramas corrosivo e irritante)
+- Usar **guantes de nitrilo, gafas cerradas** (se aplica sobre cabeza y gotea) y manga larga. Si cae en los ojos, lavar 15 min con agua y acudir al médico. Si cae en la piel, lavar con agua y jabón.
+- Mezclar en un lugar ventilado y sin levantar polvo del componente B (usar mascarilla).
+- Los envases vacíos y los restos endurecidos van a la basura de obra, no al canal de la galería.
+
+### 8.3 SikaTop 77 Experto como lechada puente — ✅ CONFIRMADO en la hoja técnica
+La hoja técnica de Ecuador (oct-2025) dice textualmente: *"como lechada de adherencia: prepare una mezcla 1:1 de cemento y arena fina lavada, esta mezcla debe amasarse con SikaTop 77 diluido en agua 1:1, hasta obtener una consistencia cremosa, fácil de aplicar con brocha sobre la superficie donde se va a formar el puente de adherencia"*. El consumo es de ≈ 0,3 kg/m². La hoja también recomienda, según el ACI, usar el aditivo en la lechada cuando el recubrimiento sea de menos de 5 cm. Se aplica sobre el **hormigón saturado y con la superficie seca (SSS)**, y el mortero va **fresco sobre fresco**.
+
+### 8.4 ¿Se puede añadir SikaTop 77 al SikaRep S? — ❌ NO
+- La hoja de SikaTop 77 Experto indica que se use para **morteros preparados en obra** (cemento + arena). Ese es el único caso de mortero que contempla.
+- Los morteros predosificados de Sika se mezclan **solo con agua**. La hoja de SikaRep EC (Ecuador) indica 25 kg + 4,5–5 L de agua. La de SikaEmaco S 488 dice expresamente *"no agregue cemento, arena u otras sustancias"*, y la de MonoTop-412 S solo indica agua. Añadir un látex cambia la relación agua/cemento, la tixotropía y la resistencia, y Sika deja de garantizar el producto.
+- **Uso correcto:** SikaTop 77 solo en la **lechada puente**. El SikaRep (o el MonoTop-412 S) se mezcla solo con agua y se aplica encima mientras la lechada está fresca.
+- Recordatorio: **no hay hoja técnica de "SikaRep S" en ecu.sika.com.** Hay que leer en el saco el nombre exacto, el agua de mezcla y el espesor por capa. Si el saco dice "SikaRep EC" o es igual a ese producto: capas ≤ 2 cm y 4,5–5 L de agua por saco.
+
+### 8.5 Saco INTACCO 25 kg
+- No se sabe qué producto es: la marca tiene morteros de reparación, adhesivos cerámicos, empastes y morteros de nivelación. **No usarlo en la reparación hasta identificarlo.** Hay que mandar una foto del saco (nombre del producto, uso, agua de mezcla y espesor) para revisar su ficha técnica.
+- **No mezclarlo con productos Sika ni usarlo como relleno estructural sin ficha.** Un adhesivo cerámico o un empaste **no sirven** para esta losa.
+
 ## 7. Pendientes
 - [ ] Pedir al distribuidor la hoja técnica del **SikaRep S cód. 447509**, o cambiarlo por **MonoTop-412 S** y cotizarlo.
 - [ ] Hacer la visita de medición (sección 4.3): golpeteo, croquis, m², espesores, diámetros, pérdida de sección y metros de fisura.
@@ -247,3 +288,4 @@ Con 10 m² de reparación, espesor promedio de 5 cm y parrilla Ø10 @ 15 cm:
 - [ ] Confirmar con el cliente si se pueden vaciar las piscinas para impermeabilizar por arriba.
 - [ ] Confirmar disponibilidad y hojas técnicas en Ecuador de: SikaTop Seal-107, inyección de poliuretano/epóxico, FerroGard-903 y ánodos galvánicos.
 - [ ] Con las medidas, pasar al agente `presupuestos` para la proforma.
+- [ ] Foto del saco INTACCO para identificar el producto (sección 8.5).
