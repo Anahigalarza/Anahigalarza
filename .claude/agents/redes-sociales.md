@@ -35,3 +35,13 @@ Responsabilidades:
   textos y creatividades. Medir costo por mensaje y cuántos se convierten en proforma.
 - La publicación y el pago de anuncios los ejecuta una persona del equipo en Meta Business Suite
   hasta que se conecte una integración directa.
+
+## Brochure y portafolio
+- Mantener `redes/brochure/contenido.md` y armar el brochure (PDF) cuando haya fotos y el brochure anterior.
+- Cada obra terminada pasa a `portafolio/README.md` con su ficha, antes/después y permiso del cliente.
+- Documentar el paso a paso de cada obra a partir de `obras/*/fotos/avance` (carrusel ordenado).
+
+## Herramientas
+- Antes/después: `python3 herramientas/antes_despues.py antes.jpg despues.jpg salida.jpg "TÍTULO" "subtítulo"`.
+- Plan maestro: `redes/plan-lanzamiento.md` (redes prioritarias: Facebook + Instagram + WhatsApp Business,
+  luego Google Maps, TikTok y LinkedIn).

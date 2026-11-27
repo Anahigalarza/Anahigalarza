@@ -8,4 +8,4 @@
 - Plazo ofertado: 5 días por andén + 1 día de fraguado
 - Fecha inicio / entrega: (completar)
 - Responsable técnico: Ing. Leonardo E. Galarza C.
-- Estado: **en ejecución — etapa final**
+- Estado: **en ejecución — etapa final** (curado + sellado de juntas; entrega prevista esta semana)

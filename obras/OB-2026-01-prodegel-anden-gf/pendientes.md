@@ -1,2 +1,12 @@
-# Pendientes
-- [ ] Tarea — responsable — fecha límite
+# Pendientes — PRODEGEL andén GF
+- [ ] Confirmar fecha exacta de entrega con PRODEGEL — Leonardo
+- [ ] Mantener curado (antisol/humedad) hasta 7 días; avisar a la planta: sin carga pesada ni hidrolavado — maestro
+- [ ] Comprar sellante de poliuretano para juntas + cordón de respaldo (cantidad según metros de junta) — Anahí
+- [ ] Sellar juntas con la junta limpia y seca — maestro
+- [ ] Rampas y bordes: puente epóxico + grout — maestro
+- [ ] Colocar segunda rejilla y sellar perímetro de marcos — maestro
+- [ ] Limpieza final y retiro de escombros — cuadrilla
+- [ ] Fotos finales (mismo ángulo que las fotos "antes") para redes — quien esté en obra
+- [ ] Acta de entrega-recepción firmada — Leonardo
+- [ ] Pedir permiso a PRODEGEL para publicar fotos de la obra — Leonardo
+- [ ] Facturar y cobrar (ver planillas-cobro.csv) — Anahí
