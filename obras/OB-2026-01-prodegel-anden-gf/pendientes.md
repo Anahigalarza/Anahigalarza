@@ -1,7 +1,7 @@
 # Pendientes — PRODEGEL andén GF
-- [ ] Confirmar fecha exacta de entrega con PRODEGEL — Leonardo
+- [x] Fecha de entrega confirmada: martes 01-dic-2026 — Leonardo
 - [ ] Mantener curado (antisol/humedad) hasta 7 días; avisar a la planta: sin carga pesada ni hidrolavado — maestro
-- [ ] Comprar sellante de poliuretano para juntas + cordón de respaldo (cantidad según metros de junta) — Anahí
+- [ ] Comprar sellante de poliuretano para juntas + cordón de respaldo (estimado 6 salchichas de 600 ml + 60 m de cordón 6–10 mm; confirmar metros de junta) — Anahí — HOY vie 27
 - [ ] Sellar juntas con la junta limpia y seca — maestro
 - [ ] Rampas y bordes: puente epóxico + grout — maestro
 - [ ] Colocar segunda rejilla y sellar perímetro de marcos — maestro
