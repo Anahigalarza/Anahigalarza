@@ -48,3 +48,8 @@ especializado correcto (ver `.claude/agents/`).
 14. App visual del equipo: `app/` publicada como artifact "Legado Obra" (slug 73e33528-fa42-4ca5-a540-7a3da458e388).
     Cuando cambien datos importantes (obras, plan del día, preguntas), actualizar el arreglo `D` de
     `app/index.html` y republicar.
+15. **Vocabulario de Ecuador:** "varilla" (no barra), "funda/unidad de 600 ml" (no salchicha), "hormigón", "ripio", "quintal".
+16. **Consultas desde la app:** el equipo conversa con Claude en la pestaña «Claude» de la app y pide proformas en «Proformas».
+    Todo queda en la base de datos del artifact (colecciones `consultas` y `proformas`). En cada sesión y en los avisos
+    de 5:52, revisar con `db_query` las consultas con `estado = "para_oficina"` y las proformas con `estado = "pedido_pdf"`:
+    procesarlas (archivos, PDF con `herramientas/generar_proforma.py`), responder en la misma conversación y cambiar el estado.

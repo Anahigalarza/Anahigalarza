@@ -94,7 +94,7 @@ Revisé las hojas técnicas vigentes de **Sika Ecuador** (ecu.sika.com, versione
 - **Coordinar con el cliente:** de ser posible, **vaciar las piscinas** encima de cada tramo mientras se trabaja; si no se puede, al menos bajar el nivel. Definir los horarios con la operación de la planta.
 - **EPP:** casco, **gafas cerradas y careta** (se trabaja sobre cabeza y cae material), mascarilla P100/N95 contra el polvo de sílice, guantes de nitrilo (el Armatec y los morteros son alcalinos), botas de caucho, protección auditiva y ropa manga larga.
 - **Andamio o plataforma** estable para trabajar con la losa a la altura del pecho o los hombros. No trabajar parado sobre el canal.
-- **Apuntalamiento:** si al abrir se encuentran **varillas con más del 20–25 % de pérdida de sección en varias barras seguidas**, o si la zona abierta es de más de ≈ 1 m de ancho en todo el ancho de la losa, **parar y avisar al Ing. Leonardo** antes de seguir picando. Puede necesitarse apuntalar el tramo, sobre todo si las piscinas están llenas.
+- **Apuntalamiento:** si al abrir se encuentran **varillas con más del 20–25 % de pérdida de sección en varias varillas seguidas**, o si la zona abierta es de más de ≈ 1 m de ancho en todo el ancho de la losa, **parar y avisar al Ing. Leonardo** antes de seguir picando. Puede necesitarse apuntalar el tramo, sobre todo si las piscinas están llenas.
 
 ### Paso 1 — Golpeteo y marcado
 1. Golpear toda la losa (y la parte alta de los muros) con un martillo. Marcar con tiza o spray **todo lo que suene hueco**.

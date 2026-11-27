@@ -152,7 +152,7 @@
 
 | Sellante | Cuándo usarlo | Datos de la hoja técnica |
 |---|---|---|
-| **Sikaflex® PRO-3 SL** (salchicha de 600 ml) — **1.ª opción para andenes** | Juntas de piso con tráfico, **de 10 a 35 mm de ancho** | Poliuretano de 1 componente, autonivelante. Movimiento ±25 %. Resiste **agua, agua de mar, álcalis diluidos, cemento, detergentes y lodo**; **no resiste ácidos ni álcalis concentrados**. Relación ancho:profundidad **1:0,8**. Rendimiento por salchicha: **6 m** en junta de 10 × 10 mm, 3,3 m en 15 × 12 mm y 1,9 m en 20 × 16 mm. Forma piel a los ~100 min y cura ~3,5 mm/24 h a 23 °C. Aplicar entre +5 y +40 °C. Usar **cordón de respaldo** de polietileno de celda cerrada. |
+| **Sikaflex® PRO-3 SL** (funda de 600 ml) — **1.ª opción para andenes** | Juntas de piso con tráfico, **de 10 a 35 mm de ancho** | Poliuretano de 1 componente, autonivelante. Movimiento ±25 %. Resiste **agua, agua de mar, álcalis diluidos, cemento, detergentes y lodo**; **no resiste ácidos ni álcalis concentrados**. Relación ancho:profundidad **1:0,8**. Rendimiento por funda de 600 ml: **6 m** en junta de 10 × 10 mm, 3,3 m en 15 × 12 mm y 1,9 m en 20 × 16 mm. Forma piel a los ~100 min y cura ~3,5 mm/24 h a 23 °C. Aplicar entre +5 y +40 °C. Usar **cordón de respaldo** de polietileno de celda cerrada. |
 | **Sikaflex®-2c SL** (unidad de 1,5 gal / 8 kg) — **para juntas angostas o con agua permanente** | Juntas **desde 6 mm (1/4")**, horizontales, **bajo agua** (canales o estanques) | Poliuretano de **2 componentes**, curado químico, autonivelante, movimiento 50 % (ASTM C920 Clase 25). Resiste agua, ácidos diluidos y álcalis diluidos. Rinde **≈ 94 m/gal en 6 × 6 mm** (≈ 140 m por unidad de 1,5 gal) y ≈ 42 m/gal en 10 × 10 mm. Queda seco al tacto a las 6–8 h y cura en **3 días** (esperar 3 días antes de inmersión). Hay 4 h de trabajo. |
 
 **Paso a paso del sellado:**
@@ -166,7 +166,7 @@
 > - **(a)** **ensanchar** la junta a 10 mm con un segundo corte de disco en la parte superior (caja de sello) y sellar con PRO-3 SL, o
 > - **(b)** sellar con **Sikaflex-2c SL**, que admite juntas desde 6 mm.
 >
-> Avisar a la sesión de compras antes de comprar las salchichas.
+> Avisar a la sesión de compras antes de comprar las fundas de sellante.
 
 ---
 
