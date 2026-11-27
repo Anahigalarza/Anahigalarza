@@ -9,3 +9,7 @@
 - Fotos: `fotos/` (7 fotos del estado actual, 27-nov-2026).
 - Consulta técnica (diagnóstico + procedimiento + cantidades): [`consultas/2026-11-27_losa-acero-expuesto-galeria-lavadores.md`](../../consultas/2026-11-27_losa-acero-expuesto-galeria-lavadores.md)
   → Recomendación: Armatec 108 ✅, SikaTop 77 Experto solo como lechada ✅, **cambiar SikaRep S por Sika MonoTop-412 S** (R4, con inhibidor). Falta medir en sitio.
+
+## Bitácora
+- 2026-11-27: varillas limpiadas con lija; inicia SikaTop Armatec 108 (1.ª capa). Recomendado ventilar y calentar el ambiente, sin calor directo.
+- 2026-11-27: en obra hay un saco abierto de **Mapei Mapefer 1K** (5 kg, lote 14/09/2018): es protector de armaduras, mismo uso que el Armatec. **Vencido y abierto → NO usar.** No mezclar sistemas de dos marcas.
