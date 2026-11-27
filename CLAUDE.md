@@ -10,7 +10,7 @@ especializado correcto (ver `.claude/agents/`).
 |---|---|---|
 | Ing. Leonardo E. Galarza C. (papá) | Ingeniero civil — dirección técnica | Firma proformas (L.P. 18-543) |
 | Andrés Galarza | Arquitecto — **residente en obra la mayor parte del tiempo** | Recibe las tareas de obra, compras para llevar, planos, imagen de marca |
-| Anahí Galarza | Ingeniera — **oficina**: presupuestos, proformas, compras, facturación; va a obra a veces | Contacto principal con Claude · WhatsApp ventas 0987937294 |
+| Anahí Galarza | Ingeniera — **oficina**: presupuestos, proformas, compras, facturación; días puntuales en obra apoyando a Andrés | Contacto principal con Claude · WhatsApp ventas 0987937294 |
 
 (Completar nombres y correos en `empresa/equipo.md`.)
 
