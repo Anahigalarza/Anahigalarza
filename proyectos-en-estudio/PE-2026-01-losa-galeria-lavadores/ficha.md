@@ -7,3 +7,5 @@
   (cód. 106561), SikaTop 77 Experto 4 kg (cód. 718307).
 - Estado: **en estudio** → procedimiento técnico (agente consultas-tecnicas) → proforma (agente presupuestos).
 - Fotos: `fotos/` (7 fotos del estado actual, 27-nov-2026).
+- Consulta técnica (diagnóstico + procedimiento + cantidades): [`consultas/2026-11-27_losa-acero-expuesto-galeria-lavadores.md`](../../consultas/2026-11-27_losa-acero-expuesto-galeria-lavadores.md)
+  → Recomendación: Armatec 108 ✅, SikaTop 77 Experto solo como lechada ✅, **cambiar SikaRep S por Sika MonoTop-412 S** (R4, con inhibidor). Falta medir en sitio.
