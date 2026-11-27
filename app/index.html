@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f6b2e">
+<title>Legado Obra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE work tool for a 3-person family builder, used on site from a phone
+   IDEA the site foreman's clipboard: today's sheet on top, tabs like the colored dividers of an obra binder
+   PICTURE the countdown to the next delivery as a big stamped day-count with a day-by-day strip of the final schedule
+   COLOUR white ground, Legado green #1f6b2e as the header field, safety orange #e8731a accent from the logo, ink near-black
+   TYPE Barlow Condensed (site signage) for titles and numbers + Barlow for text
+   LAYOUT one phone column, sticky tab bar at bottom; at 720px+ two columns per view */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1511);--ink:light-dark(#151a16,#e9efe9);--mut:light-dark(#5b665d,#9aa79c);--g:#1f6b2e;--g2:light-dark(#e7f2e8,#16261a);--o:#e8731a;--line:light-dark(#dfe5df,#26322a);--card:light-dark(#ffffff,#141c16)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif;overflow-x:clip;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3,.num{font-family:"Barlow Condensed",Barlow,sans-serif;letter-spacing:-.01em;line-height:1.05;margin:0}
+h2{font-size:30px;margin:6px 0 12px}
+h3{font-size:21px;margin:0 0 6px}
+img{max-width:100%;display:block}
+header{background:var(--g);color:#fff;padding:calc(14px + env(safe-area-inset-top,0px)) max(16px,5vw) 18px}
+.top{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto}
+.top img{width:58px;background:#fff;border-radius:8px;padding:4px}
+.top h1{font-size:28px}
+.top p{margin:0;opacity:.85;font-size:14px}
+main{max-width:1100px;margin:0 auto;padding:16px max(16px,5vw)}
+section{display:none}
+section.on{display:block}
+.grid{display:grid;gap:14px}
+@media(min-width:720px){.grid.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.tint{background:var(--g2);border-color:transparent}
+.count{display:flex;gap:16px;align-items:center}
+.count .num{font-size:clamp(64px,18vw,96px);color:var(--o)}
+.count b{font-family:"Barlow Condensed";font-size:24px;display:block}
+.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:12px}
+.day{border-radius:8px;padding:8px 6px;background:var(--bg);border:1px solid var(--line);font-size:13px;line-height:1.3}
+.day b{display:block;font-family:"Barlow Condensed";font-size:18px}
+.day.now{border:2px solid var(--o)}
+.day.end{background:var(--g);color:#fff;border-color:var(--g)}
+.who{display:flex;gap:10px;align-items:baseline;margin:0 0 4px}
+.tag{font-size:13px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--g2);color:var(--g);white-space:nowrap}
+:root[data-theme=dark] .tag{color:#8fd39b}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .tag{color:#8fd39b}}
+.tag.n{background:var(--line);color:var(--mut)}
+.tag.o{background:color-mix(in srgb,var(--o) 18%,transparent);color:var(--o)}
+ul.chk{list-style:none;margin:0;padding:0}
+ul.chk li{display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line);align-items:flex-start}
+ul.chk li:first-child{border-top:0}
+ul.chk input{width:22px;height:22px;accent-color:var(--g);flex:none;margin-top:1px}
+ul.chk li.done span{text-decoration:line-through;color:var(--mut)}
+.small{font-size:14px;color:var(--mut)}
+.bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%;background:var(--g)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{padding:7px 4px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:13px;color:var(--mut);font-weight:600;border-top:0}
+td.r,th.r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.st{white-space:nowrap}
+.posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.posts img{aspect-ratio:4/5;object-fit:cover;border-radius:4px;width:100%}
+.agent{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.agent:first-of-type{border-top:0}
+.agent p{margin:0;grid-column:1/-1;font-size:14px;color:var(--mut)}
+button{font:600 15px Barlow,sans-serif;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--g);background:transparent;color:var(--ink);cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--o);outline-offset:2px}
+button.p{background:var(--g);color:#fff}
+.q{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.q:first-of-type{border-top:0}
+.q .tag{align-self:flex-start}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:60px;color:var(--mut);text-decoration:none;font-size:12.5px;font-weight:600}
+nav a svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}
+nav a.on{color:var(--g)}
+:root[data-theme=dark] nav a.on{color:#8fd39b}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) nav a.on{color:#8fd39b}}
+.photo{border-radius:10px;overflow:hidden;margin-bottom:10px}
+.photo img{width:100%;aspect-ratio:16/10;object-fit:cover}
+ol{padding-left:20px;margin:6px 0}
+ol li{margin:4px 0}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;opacity:0;transition:opacity .2s}
+.toast.on{opacity:1}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="top"><img src="img/logo.png" alt="Logo LG"><div><h1>Legado Constructora</h1><p id="hoyTxt">Ambato · tablero de obra</p></div></div></header>
+<main>
+
+<section id="v-hoy">
+  <div class="grid two">
+    <div class="card tint">
+      <div class="count"><span class="num" id="dias">4</span><div><b>días para entregar PRODEGEL</b><span class="small">Andén GF · entrega martes 1 de diciembre</span></div></div>
+      <div class="strip" id="strip"></div>
+    </div>
+    <div class="card">
+      <h3>Comprar hoy</h3>
+      <ul class="chk" id="compras"></ul>
+      <p class="small">Cantidad de sellante estimada con ≈52 m de junta. Confirmar metros reales.</p>
+    </div>
+  </div>
+  <h2>Tareas de hoy por persona</h2>
+  <div class="grid two" id="personas"></div>
+  <div class="card" style="margin-top:14px">
+    <h3>Avisos automáticos</h3>
+    <table><tr><th>Hora</th><th>Qué avisa</th></tr>
+    <tr><td class="st">5:52 pm</td><td>Comprar hoy: lista de compras para mañana (Anahí) y plan de obra (Andrés)</td></tr>
+    <tr><td class="st">5:52 am</td><td>Llevar a obra: checklist para cargar el carro</td></tr>
+    <tr><td class="st">Día 23</td><td>SRI: resumen de IVA; la declaración vence el 28</td></tr></table>
+    <p class="small">Llegan como notificación de la app de Claude. Para recibirlos por correo falta conectar Gmail u Outlook.</p>
+  </div>
+</section>
+
+<section id="v-obras">
+  <h2>Obras</h2>
+  <div class="grid two">
+    <div class="card">
+      <div class="photo"><img src="img/prodegel.jpg" alt="Andén terminado con rejilla"></div>
+      <h3>OB-2026-01 · Andén GF PRODEGEL</h3>
+      <p class="small">78,72 m² · Proforma 1047 · USD 3.945,43 + IVA · Responsable: Ing. Leonardo · En obra: Andrés</p>
+      <div class="bar"><i id="avBar"></i></div><p class="small" id="avTxt"></p>
+      <table class="crono" id="crono"><tr><th>Actividad</th><th>Estado</th></tr></table>
+    </div>
+    <div>
+      <div class="card">
+        <h3>Detalles por corregir antes de entregar</h3>
+        <ul class="chk" id="obs"></ul>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <div class="photo"><img src="img/losa.jpg" alt="Losa con varillas expuestas"></div>
+        <h3>En estudio · Losa de galería bajo lavadores</h3>
+        <p class="small">Acero expuesto y oxidado por agua con sal. Proforma pendiente de medir en sitio.</p>
+        <ol>
+          <li>Picar hasta liberar 2 cm detrás de la varilla; limpiar el acero sin óxido.</li>
+          <li>SikaTop Armatec 108: 2 capas con brocha; en Ambato 10–12 h entre capas.</li>
+          <li>Esperar 36–48 h antes del mortero.</li>
+          <li>Lechada puente: cemento + arena 1:1 con SikaTop 77 diluido 1:1.</li>
+          <li>Mortero de reparación fresco sobre fresco; curar.</li>
+        </ol>
+        <p class="small">Detalle completo en el chat «Legado · Consultas técnicas». No usar el saco INTACO hasta identificarlo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="v-dinero">
+  <h2>Dinero de las obras</h2>
+  <div class="grid two">
+    <div class="card">
+      <h3>PRODEGEL · presupuesto vs gastado</h3>
+      <table><tr><th>Concepto</th><th class="r">USD</th></tr>
+      <tr><td>Contrato (sin IVA)</td><td class="r">3.945,43</td></tr>
+      <tr><td>IVA 15 %</td><td class="r">591,81</td></tr>
+      <tr><td>Gastos registrados</td><td class="r">0,00</td></tr>
+      <tr><td>Cobrado</td><td class="r">0,00</td></tr></table>
+      <p class="small">Aún no hay facturas cargadas. Envía fotos de cada factura al chat del Residente diciendo de qué obra son; el contador las registra y aquí verás gastado, saldo y utilidad.</p>
+    </div>
+    <div class="card">
+      <h3>Impuestos</h3>
+      <p>RUC 1802252708001 · noveno dígito 0 → declaración el <b>28</b> de cada mes.</p>
+      <p class="small">El agente Contabilidad SRI prepara el resumen el día 23. Faltan por registrar las facturas de compras y ventas de noviembre.</p>
+    </div>
+  </div>
+</section>
+
+<section id="v-proformas">
+  <h2>Proformas</h2>
+  <div class="grid two">
+    <div class="card">
+      <table><tr><th>N.º</th><th>Cliente</th><th class="r">+ IVA</th><th>Estado</th></tr>
+      <tr><td>1047</td><td>PRODEGEL · andén GF</td><td class="r">3.945,43</td><td>En ejecución</td></tr>
+      <tr><td>—</td><td>Losa galería lavadores</td><td class="r">—</td><td>En estudio</td></tr></table>
+    </div>
+    <div class="card">
+      <h3>Pedir una proforma nueva</h3>
+      <p class="small">El agente Presupuestos te pregunta medidas, garantía, forma de pago, plazo e imprevistos, y entrega PDF y Excel con el formato de la empresa.</p>
+      <button class="p cp" data-t="Necesito una proforma para [cliente]: [qué trabajo], en [ubicación]. Medidas aproximadas: [largo x ancho]. Te mando fotos.">Copiar mensaje de ejemplo</button>
+    </div>
+  </div>
+</section>
+
+<section id="v-redes">
+  <h2>Redes sociales</h2>
+  <div class="grid two">
+    <div class="card"><div class="posts" id="posts"></div><p class="small">9 publicaciones listas · ventas por WhatsApp 0987937294</p></div>
+    <div class="card">
+      <h3>Para lanzar</h3>
+      <ul class="chk" id="redesChk"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="v-equipo">
+  <h2>Agentes y preguntas</h2>
+  <div class="grid two">
+    <div class="card">
+      <h3>Te están preguntando</h3>
+      <div id="preguntas"></div>
+    </div>
+    <div class="card">
+      <h3>Con quién hablar</h3>
+      <p class="small">Escribe todo en el chat «Residente de obra»; él lo pasa al agente correcto. Las dudas técnicas largas van al chat «Legado · Consultas técnicas».</p>
+      <div id="agentes"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<nav id="nav"></nav>
+<div class="toast" id="toast">Copiado</div>
+<script>
+{
+const D = {
+  entrega: "2026-12-01",
+  dias: [["vie 27","Rampas y sellante"],["sáb 28","Sellar juntas"],["dom 29","Curado"],["lun 30","Revisión final"],["mar 1","Entrega"]],
+  compras: ["Sellante de poliuretano para juntas · ≈6 salchichas de 600 ml","Cordón de respaldo · ≈60 m","Pistola para salchicha (si no hay)","Guantes de nitrilo, gafas cerradas, mascarillas"],
+  personas: [
+    ["Andrés","En obra",["Supervisar rampas: hormigón suelto fuera, borde recto, epóxico y grout","Colocar la 2.ª rejilla y dejar el marco a ras","Losa de galería: Armatec 108 sobre acero limpio y seco","Exigir gafas y protector auditivo a la cuadrilla"]],
+    ["Anahí","Oficina",["Comprar sellante y cordón para juntas","Preparar la factura de la proforma 1047","Crear Facebook, Instagram y WhatsApp Business"]],
+    ["Ing. Leonardo","Dirección",["Coordinar hora de entrega del martes y quién firma el acta","Pedir permiso a PRODEGEL para publicar fotos","Validar el procedimiento de la losa con acero expuesto"]]
+  ],
+  crono: [["Limpieza e hidrolavado","ok"],["Anclajes y malla","ok"],["Hormigón e=7 cm","ok"],["Endurecedor y alisado","ok"],["Curado 7 días","curso"],["Corte y sellado de juntas","curso"],["Rampas y bordes","curso"],["Marcos y rejillas","curso"],["Limpieza y entrega","pend"],["Facturación y cobro","pend"]],
+  obs: ["Marco sin rejilla: limpiar rebabas, a ras y sellar","Rampa: completar epóxico y grout con borde recto","Sellar todas las juntas cortadas","Retirar plástico, cables y escombros"],
+  redes: ["Crear página de Facebook","Crear Instagram @legadoconstructora y vincular","WhatsApp Business en 0987937294 con textos del kit","Permiso de PRODEGEL para 4 publicaciones","Subir de la 09 a la 01","Activar anuncio USD 3–5 diarios"],
+  preguntas: [["Andrés","¿Cuántos metros de junta hay en el andén? (para ajustar el sellante)"],["Andrés","Foto del saco INTACO de 25 kg que está en obra"],["Leonardo","¿Garantía y forma de pago de la 1047?"],["Leonardo","¿El de chompa jean en la foto del fundador es usted?"],["Anahí","Fotos de las facturas de PRODEGEL para el control de gastos"],["Anahí","Conectar Gmail u Outlook para que los avisos lleguen al correo"]],
+  agentes: [["Residente de obra","Dudas técnicas, bitácora, fotos de avance","Revisa esta foto del armado y dime si está bien"],["Planificador","Plan de mañana, qué comprar y qué llevar","¿Qué necesito para fundir mañana una losa de 40 m²?"],["Consultas técnicas","Reparaciones, productos, diagnósticos","¿Cómo reparo una fisura de 3 mm en una viga?"],["Presupuestos","Proformas para clientes","Haz la proforma de una ampliación de 60 m²"],["Compras","Cotizaciones a proveedores","Pide cotización de 40 varillas de 12 mm"],["Contador de obra","Gastos por obra","Te mando 5 facturas de PRODEGEL"],["Contabilidad SRI","Facturas, IVA, retenciones","¿Cuánto IVA pagamos este mes?"],["Secretario","Agenda, citas, mensajes","Agenda visita al cliente el lunes 10 am"],["Redes sociales","Publicaciones, antes/después, anuncios","Haz el antes y después con estas fotos"]]
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $ = id => document.getElementById(id);
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem("legado-chk") || "{}"); } catch (e) {}
+const keep = () => { try { localStorage.setItem("legado-chk", JSON.stringify(saved)); } catch (e) {} };
+const chk = (id, items) => {
+  $(id).innerHTML = items.map((t, i) => {
+    const k = id + i, on = saved[k] ? " checked" : "";
+    return `<li class="${on ? "done" : ""}"><input type="checkbox" id="${k}"${on} aria-label="${esc(t)}"><span>${esc(t)}</span></li>`;
+  }).join("");
+};
+const hoy = new Date(); hoy.setHours(0,0,0,0);
+const fin = new Date(D.entrega + "T00:00:00");
+const faltan = Math.max(0, Math.round((fin - hoy) / 864e5));
+$("dias").textContent = faltan;
+$("hoyTxt").textContent = "Ambato · " + hoy.toLocaleDateString("es-EC", {weekday:"long", day:"numeric", month:"long"});
+const idx = Math.max(0, 4 - faltan);
+$("strip").innerHTML = D.dias.map((d, i) => `<div class="day${i === idx ? " now" : ""}${i === 4 ? " end" : ""}"><b>${esc(d[0])}</b>${esc(d[1])}</div>`).join("");
+chk("compras", D.compras);
+$("personas").innerHTML = D.personas.map((p, j) => `<div class="card"><div class="who"><h3>${esc(p[0])}</h3><span class="tag${j === 0 ? " o" : ""}">${esc(p[1])}</span></div><ul class="chk" id="per${j}"></ul></div>`).join("");
+D.personas.forEach((p, j) => chk("per" + j, p[2]));
+const lab = {ok:["Hecho",""],curso:["En curso","o"],pend:["Pendiente","n"]};
+$("crono").innerHTML += D.crono.map(c => `<tr><td>${esc(c[0])}</td><td class="st"><span class="tag ${lab[c[1]][1]}">${lab[c[1]][0]}</span></td></tr>`).join("");
+const pct = Math.round(D.crono.reduce((a, c) => a + (c[1] === "ok" ? 1 : c[1] === "curso" ? .5 : 0), 0) / D.crono.length * 100);
+$("avBar").style.width = pct + "%";
+$("avTxt").textContent = `Avance estimado ${pct} % (hecho = 1, en curso = ½)`;
+chk("obs", D.obs);
+$("posts").innerHTML = [1,2,3,4,5,6,7,8,9].map(n => `<img src="img/post-0${n}.jpg" alt="Publicación ${n}" loading="lazy">`).join("");
+chk("redesChk", D.redes);
+$("preguntas").innerHTML = D.preguntas.map(q => `<div class="q"><span class="tag">${esc(q[0])}</span><span>${esc(q[1])}</span></div>`).join("");
+$("agentes").innerHTML = D.agentes.map(a => `<div class="agent"><b>${esc(a[0])}</b><button class="cp" data-t="${esc(a[2])}">Copiar ejemplo</button><p>${esc(a[1])} · «${esc(a[2])}»</p></div>`).join("");
+document.addEventListener("change", e => {
+  const t = e.target; if (t.type !== "checkbox") return;
+  saved[t.id] = t.checked; keep(); t.closest("li").classList.toggle("done", t.checked);
+});
+document.addEventListener("click", async e => {
+  const b = e.target.closest(".cp"); if (!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.t); $("toast").textContent = "Copiado"; }
+  catch (err) { $("toast").textContent = "No se pudo copiar"; }
+  $("toast").classList.add("on"); setTimeout(() => $("toast").classList.remove("on"), 1400);
+});
+const tabs = [["hoy","Hoy","M4 5h16v15H4zM4 9h16M9 3v4M15 3v4"],["obras","Obras","M3 20h18M5 20V9l7-5 7 5v11M10 20v-6h4v6"],["dinero","Dinero","M3 7h18v10H3zM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5"],["proformas","Proformas","M6 3h9l4 4v14H6zM9 12h7M9 16h7"],["redes","Redes","M4 4h16v16H4zM4 15l5-5 4 4 3-3 4 4"],["equipo","Agentes","M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6M2 20c0-3 3-5 6-5s6 2 6 5M17 11a2.5 2.5 0 1 0 0-5M16 15c3 0 6 2 6 5"]];
+$("nav").innerHTML = tabs.map(t => `<a href="#${t[0]}" data-v="${t[0]}"><svg viewBox="0 0 24 24"><path d="${t[2]}"/></svg>${t[1]}</a>`).join("");
+const show = () => {
+  const v = tabs.some(t => "#" + t[0] === location.hash) ? location.hash.slice(1) : "hoy";
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
+  document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.v === v));
+  window.scrollTo(0, 0);
+};
+window.addEventListener("hashchange", show); show();
+}
+</script>
+</body>
+</html>
