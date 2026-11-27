@@ -1,7 +1,7 @@
 # Pendientes — PRODEGEL andén GF
 - [x] Fecha de entrega confirmada: martes 01-dic-2026 — Leonardo
 - [ ] Mantener curado (antisol/humedad) hasta 7 días; avisar a la planta: sin carga pesada ni hidrolavado — maestro
-- [ ] Comprar sellante de poliuretano para juntas + cordón de respaldo (estimado 6 salchichas de 600 ml + 60 m de cordón 6–10 mm; confirmar metros de junta) — Anahí — HOY vie 27
+- [ ] Comprar sellante de poliuretano para juntas + cordón de respaldo (estimado 6 salchichas de 600 ml + 60 m de cordón; ⚠️ MEDIR ANCHO DE JUNTA: si < 10 mm usar Sikaflex-2c SL o ensanchar a 10 mm para Sikaflex PRO-3 SL — ver consultas/2026-11-27_reparacion-juntas-piso-industrial.md) — Anahí — HOY vie 27
 - [ ] Sellar juntas con la junta limpia y seca — maestro
 - [ ] Rampas y bordes: puente epóxico + grout — maestro
 - [ ] Colocar segunda rejilla y sellar perímetro de marcos — maestro
