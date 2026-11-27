@@ -22,6 +22,53 @@
 
 ---
 
+## 1-bis. Comparación directa pedida: **SikaRep-EC vs SikaGrout** (para juntas)
+
+> Supongo que "SikaGrout" es el **SikaGrout-212** (saco de 30 kg). Si el saco dice "SikaGrout EC" o solo "SikaGrout", hay que avisarme: son grouts fluidos parecidos, pero con otra hoja técnica.
+
+**Veredicto: para reparar juntas, usar SikaRep-EC.** El SikaGrout queda solo para baches profundos y horizontales.
+
+| Criterio | SikaRep-EC | SikaGrout-212 |
+|---|---|---|
+| Consistencia | **Plástica y tixotrópica**: se queda donde se pone y **mantiene la forma del borde** | **Fluida**: se escurre, **entra a la junta y la tapa**, y busca la parte más baja |
+| Labio de junta (borde vertical junto a la ranura) | ✅ Se moldea con llana contra una tira o tabla puesta en la junta | ❌ Necesita encofrado hermético; sin él se pierde dentro de la junta |
+| Pendiente (rampas, andenes con caída a la rejilla) | ✅ | ❌ Se nivela solo y se corre |
+| Espesor | Capas de **≤ 2 cm** (se puede repetir hasta 4 cm) | 3–50 mm por colada, **solo confinado y horizontal** |
+| Resistencia | 120 kg/cm² a 1 día → **400 kg/cm² a 28 días** | **24 MPa (≈ 245 kg/cm²) a 1 día** → 60 MPa a 28 días |
+| Acabado | Se da con llana, queda cerrado | Sale lechada en la superficie; queda más débil a la abrasión si no se trabaja |
+| Cuándo gana | **Juntas, labios, bordes y parches de 1–4 cm** | Baches **horizontales de 3–5 cm**, confinados, cuando hay que abrir rápido al tráfico |
+| Rendimiento | ≈ 1,75 kg de polvo por litro (saco de 25 kg ≈ 14 L) | 2,2 kg de polvo por litro (saco de 30 kg ≈ 13,6 L) |
+
+**Por qué SikaRep-EC:** en una junta lo que se repara es **el borde**. Hace falta un mortero que **se quede en su sitio y forme una arista recta** junto a la ranura, sin meterse en ella. Eso lo hace un mortero tixotrópico (SikaRep-EC). Un grout fluido como el SikaGrout-212 está hecho para **rellenar bajo placas y anclajes**, según su propia hoja técnica.
+
+**Limitación honesta:** si el borde dañado es **delgado (menos de 1,5 cm)** o pasan **carretillas cargadas con ruedas duras**, el SikaRep-EC también puede volver a despostillarse. En ese caso conviene el epóxico (Sikadur-31, sección 3) solo en los labios, y SikaRep-EC en el resto.
+
+### Paso a paso con SikaRep-EC (labio o borde de junta)
+1. **Delimitar** el daño más 2 cm de hormigón sano a cada lado de la junta.
+2. **Cortar con disco** paralelo a la junta, con **≥ 2 cm de profundidad**: el SikaRep-EC necesita espesor, así que nada de bordes delgados.
+3. **Picar** con cincel hasta hormigón sano y dejar el fondo rugoso. **Aspirar** el polvo y los restos de cal.
+4. **Formar la junta:** meter en la ranura una **tabla delgada o tira de plástico o espuma**, con desmoldante, al ras del piso. Así el mortero forma la arista nueva y la junta queda abierta.
+5. **Saturar con agua** el hormigón (que quede húmedo pero mate, sin charcos).
+6. **Mezclar** el saco completo de 25 kg con **4,5 L de agua** al inicio. Si hace falta, subir hasta 5 L como máximo, nunca más. Usar taladro lento durante 3 min. Hay **1 h** para colocarlo (a 20 °C).
+7. **Frotar** una capa delgada del mortero con fuerza contra el fondo y las paredes (puente). Si se quiere más adherencia, usar la **lechada con SikaTop 77 Experto** (cemento + arena 1:1 amasados con SikaTop 77 diluido 1:1 en agua) y colocar el mortero fresco sobre fresco.
+8. **Rellenar** en capas de **≤ 2 cm**, compactando con llana contra la tabla de la junta. Si son 2 capas, rayar la primera y poner la segunda cuando ya fraguó pero sigue "verde".
+9. **Acabado** al ras del piso con llana metálica o esponja húmeda, **sin echar agua**. Redondear un poco la arista (con un canteador de 3–5 mm) para que no se despostille.
+10. **Retirar la tabla** cuando el mortero ya no se deforme (≈ 2–4 h).
+11. **Curado húmedo** durante **5–7 días** (plástico, yute mojado o Antisol). En Ambato hace más frío, así que conviene el extremo largo.
+12. **Habilitación:** peatones a 1–2 días y **carretillas a los 7 días**, cuando ya llega a ≈ 350 kg/cm².
+13. **Sellar la junta** con Sikaflex (sección 5) **después de 2 semanas** (hoja del Sikaflex-1A PLUS para morteros cementicios), con la junta seca y con cordón de respaldo.
+
+### Si usan SikaGrout-212 (solo en baches horizontales de 3–5 cm)
+1. Cortar un rectángulo, picar y limpiar (igual que los pasos 1–3).
+2. **Encofrar la junta** con una tabla sellada para que el grout no se meta en ella.
+3. Saturar el hormigón y retirar el agua sobrante.
+4. Mezclar **6–6,5 L de agua por saco de 30 kg**, durante 3 min con taladro de < 500 rpm. Dejar reposar 3 min y dar un remezclado de 10 s.
+5. **Verter de un solo lado**, de forma continua, para que salga el aire. Hay 40 min para colocarlo.
+6. **Curar** de inmediato durante **3 días o más** (Antisol o plástico mojado).
+7. Habilitación: tráfico liviano a 1 día y carretillas a ~3 días (más en Ambato por el frío). Sellar la junta a las 2 semanas.
+
+---
+
 ## 2. Los productos que se mencionaron
 
 ### SikaRep® EC (es el "SikaRep" de 25 kg que tienen en obra) — sirve para baches, no es lo ideal para labios
