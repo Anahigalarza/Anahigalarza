@@ -44,3 +44,6 @@ especializado correcto (ver `.claude/agents/`).
 10. Proyectos aún sin contrato: `proyectos-en-estudio/PE-AAAA-NN-nombre/`.
 11. Avisos: tarde (~5:52 pm) = qué COMPRAR hoy para mañana; mañana (~5:52 am) = qué LLEVAR a obra. Tareas de obra → Andrés; compras, oficina y presupuestos → Anahí; supervisión, firmas y cliente → Ing. Leonardo.
 12. Al terminar cualquier tarea, decir qué archivos se actualizaron y qué queda pendiente.
+13. App visual del equipo: `app/` publicada como artifact "Legado Obra" (slug 73e33528-fa42-4ca5-a540-7a3da458e388).
+    Cuando cambien datos importantes (obras, plan del día, preguntas), actualizar el arreglo `D` de
+    `app/index.html` y republicar.
