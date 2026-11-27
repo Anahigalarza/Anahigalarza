@@ -5,7 +5,7 @@
 |---|---|---|---|
 | 1 | **Facebook (página)** | Es la red más usada en Ambato por quien contrata obras (30–60 años, dueños de casa, gerentes de planta). Los anuncios pagados salen desde aquí. | Portafolio, reseñas, anuncios |
 | 1 | **Instagram** | Se crea junto con Facebook (misma cuenta de Meta Business Suite, se publica en las dos a la vez). Fuerte para antes/después y reels. | Antes/después, reels, historias de obra |
-| 1 | **WhatsApp Business** (0998003983) | Aquí se cierran las ventas: los anuncios llevan a "Enviar mensaje". Catálogo con servicios. | Atención, proformas, seguimiento |
+| 1 | **WhatsApp Business** (0987937294 — Anahí, ventas) | Aquí se cierran las ventas: los anuncios llevan a "Enviar mensaje". Catálogo con servicios. | Atención, proformas, seguimiento |
 | 2 | **Perfil de Empresa en Google (Maps)** | Quien busca "constructora en Ambato" o "ingeniero civil Ambato" ve el perfil con fotos y reseñas. Gratis. | Ser encontrados, reseñas |
 | 3 | **TikTok** | Mismos reels reciclados. Alcance gratis grande con videos de proceso. | Alcance |
 | 4 | **LinkedIn** | Para contratos con empresas e industrias (como PRODEGEL). | Clientes corporativos |
@@ -29,7 +29,10 @@
 4. **Equipo familiar:** ingeniero civil con trayectoria + arquitecto + ingeniera (confianza).
 5. **Testimonios y obras entregadas.**
 
-## 4. Primeras 9 publicaciones (para que el perfil no se vea vacío)
+## 4. Primeras 9 publicaciones — LISTAS en `publicaciones/lanzamiento/` (imágenes + `TEXTOS.md`)
+Kit de perfiles para copiar y pegar: `kit-perfiles.md`.
+
+### Plan original
 | # | Formato | Tema | Material |
 |---|---|---|---|
 | 1 | Carrusel | Presentación: quiénes somos (el equipo familiar) | Fotos del equipo (pendiente) |

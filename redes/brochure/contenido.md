@@ -1,9 +1,11 @@
 # Brochure Legado Constructora — contenido (borrador)
-> Se completará con el brochure anterior que suba Anahí y con las obras del portafolio.
+> Basado en el brochure anterior (`portafolio/brochure-anterior/`) + portafolio. Mantener sus secciones fuertes:
+> Quiénes somos, Seguridad industrial (análisis de riesgos, permisos de trabajo, EPP, arnés, andamios),
+> Obras civiles, Metalmecánica, Mantenimiento industrial, Clientes y Contacto.
 
 1. **Portada:** logo, "Legado Constructora — Construimos con seguridad, dejamos un legado", foto de obra.
 2. **Quiénes somos:** empresa familiar de Ambato. Ing. Leonardo E. Galarza C. (ingeniero civil,
-   L.P. 18-543, [años] de experiencia), Arq. Andrés Galarza, Ing. Anahí Galarza.
+   L.P. 18-543, +25 años de experiencia), Arq. Andrés Galarza, Ing. Anahí Galarza.
 3. **Servicios:** construcción de viviendas · remodelaciones y ampliaciones · diseño arquitectónico y
    estructural sismorresistente (NEC-15) · pisos y andenes industriales · reparación de estructuras ·
    presupuestos y dirección técnica.
@@ -11,4 +13,4 @@
    cumplimiento de la normativa sísmica.
 5. **Portafolio:** una página por obra, con antes/después, ficha corta y testimonio (ver `portafolio/`).
 6. **Clientes:** industriales y particulares (con permiso).
-7. **Contacto:** WhatsApp, correo, redes, ubicación.
+7. **Contacto:** Ventas WhatsApp 0987937294 (Anahí) · Gerencia 0998003983 (Ing. Leonardo) · ingleogalarza@hotmail.com · @legadoconstructora

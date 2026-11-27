@@ -42,6 +42,7 @@ Responsabilidades:
 - Documentar el paso a paso de cada obra a partir de `obras/*/fotos/avance` (carrusel ordenado).
 
 ## Herramientas
-- Antes/después: `python3 herramientas/antes_despues.py antes.jpg despues.jpg salida.jpg "TÍTULO" "subtítulo"`.
+- Imágenes: `herramientas/posts.py` → `antes_despues()`, `foto()`, `tarjeta()` (1080×1350, marca, WhatsApp de ventas 0987937294).
+- WhatsApp de ventas en todo el contenido: **0987937294 (Anahí)**. Nunca publicar montos de contratos.
 - Plan maestro: `redes/plan-lanzamiento.md` (redes prioritarias: Facebook + Instagram + WhatsApp Business,
   luego Google Maps, TikTok y LinkedIn).

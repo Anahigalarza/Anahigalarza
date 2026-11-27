@@ -11,7 +11,7 @@ y la facturación salen a nombre del **Ing. Leonardo E. Galarza C.** (persona na
 | Licencia profesional | L.P. 18-543 | — |
 | Dirección | Las Uvas S/N y Mortiños, Ambato | |
 | Teléfono | 2422669 | |
-| Celular | 0998003983 | |
+| Celular | 0998003983 | **Ventas / WhatsApp Business: 0987937294 (Anahí)** |
 | Correo | ingleogalarza@hotmail.com | |
 | Logo | Casa verde con iniciales "LG" | Por diseñar (agente redes-sociales + arquitecto) |
 
@@ -24,5 +24,12 @@ y la facturación salen a nombre del **Ing. Leonardo E. Galarza C.** (persona na
   confirmar con el mapa de zonificación de la NEC para cada proyecto.
 - Ente tributario: **SRI** (facturación electrónica obligatoria).
 
+## Trayectoria (del brochure)
+Ing. Leonardo Efraín Galarza Calvache — trabajos desde el año 2000 (+25 años). Obra civil, metalmecánica y
+mantenimiento industrial. Ofrecía pólizas de fiel cumplimiento y de anticipo. Clientes: PRODEGEL, MIDUVI,
+Municipio de Ambato, Consejo Provincial de Tungurahua, Kraft Foods Ecuador, GAD Ambato, CREHVITAL.
+Detalle en `portafolio/README.md`.
+
 ## Redes sociales
-Aún no existen. Plan de creación a cargo del agente `redes-sociales`.
+En creación: @legadoconstructora (Facebook, Instagram, WhatsApp Business 0987937294, Google Maps).
+Ver `redes/plan-lanzamiento.md` y `redes/kit-perfiles.md`.
